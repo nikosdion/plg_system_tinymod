@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  @package   TinyMod
+  ~  @copyright Copyright (c)2022 Nicholas K. Dionysopoulos
+  ~  @license   GNU General Public License version 3, or later
+  -->
+
+<extension type="plugin" group="system" method="update">
+    <name>plg_system_tinymod</name>
+    <version>1.0.0</version>
+    <creationDate>2022-12-12</creationDate>
+    <author>Nicholas K. Dionysopoulos</author>
+    <authorEmail>nicholas@dionysopoulos.me</authorEmail>
+    <authorUrl>https://www.dionysopoulos.me</authorUrl>
+    <copyright>Copyright (c)2022 Nicholas K. Dionysopoulos</copyright>
+    <license>GNU GPL v3 or later</license>
+    <description>PLG_SYSTEM_TINYMOD_DESCRIPTION</description>
+    <namespace path="src">Dionysopoulos\Plugin\System\TinyMod</namespace>
+
+    <files>
+        <folder>services</folder>
+        <folder plugin="tinymod">src</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_system_tinymod.sys.ini</language>
+        <language tag="en-GB">en-GB/plg_system_tinymod.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+                      label="JGLOBAL_FIELDSET_BASIC">
+
+                <field name="tinymce_options"
+                       label="PLG_SYSTEM_TINYMOD_TINYMCE_OPTIONS_LABEL"
+                       description="PLG_SYSTEM_TINYMOD_TINYMCE_OPTIONS_DESC"
+                       type="editor"
+                       editor="codemirror|none"
+                       filter="\Dionysopoulos\Plugin\System\TinyMod\Filter\Json::filter"
+                       buttons="false"
+                       syntax="json"
+                    />
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

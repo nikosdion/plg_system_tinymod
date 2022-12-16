@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!--
+  ~  @package   TinyMod
+  ~  @copyright Copyright (c)2022 Nicholas K. Dionysopoulos
+  ~  @license   GNU General Public License version 3, or later
+  -->
+
+<project name="TinyMode" description="TinyMode" default="git" >
+	<import file="${phing.dir}/../../buildfiles/phing/common.xml" />
+
+	<target name="package-pkg" description="Installation package" depends="new-release, setup-properties, package-plugins" />
+
+	<target name="documentation" />
+
+	<target name="docsdeploy" />
+</project>
