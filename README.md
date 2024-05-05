@@ -133,6 +133,6 @@ You can do that with the following JSON document:
 
 Please note that we had to set [`style_formats_merge`](https://www.tiny.cloud/docs/configure/editor-appearance/#style_formats_merge) to `false` to make sure that our `style_formats` _replace_ the existing definitions. There is no other way to remove style formats. 
 
-Also note that this does not remote the formats pulled in from the `editor.css` file. That's a plugin, not a hard-coded style format.
+Also note that this does not remove the formats pulled in from the `editor.css` file. That's a plugin, not a hard-coded style format.
 
 Finally, the `block_formats` determines what will be shown in the “block elements” drop-down. I removed the heading levels 1 and 2, and I added a `<code>` element which I frequently use when doing technical support of my software.
