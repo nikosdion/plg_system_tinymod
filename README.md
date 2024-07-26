@@ -1,3 +1,7 @@
+# 🚨🚨 This repository is obsolete 🚨🚨
+
+Joomla! 5 uses TinyMCE 6. This plugin can't work with TinyMCE 6, and I have no use case for it anymore so I am not updating it.
+
 # TinyMCE Configuration Modifier for Joomla
 
 A system plugin to customise TinyMCE beyond what Joomla lets you do.
